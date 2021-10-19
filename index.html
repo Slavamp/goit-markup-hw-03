@@ -2,118 +2,164 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,500;0,700;1,400;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
-    <!--Панель навигации-->
-    <header>
-        <nav>
-            <a href="./index.html">
-                <span>Web</span>Studio
-            </a>
-
-            <ul>
-                <li><a href="">Студия</a></li>
-                <li><a href="">Портфолио</a></li>
-                <li><a href="">Контакты</a></li>
-            </ul>
-        </nav>
-
-        <ul>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-
+    <header class="main-header">
+        <div class="container header-container">
+            <nav class="main-nav">
+                <a href="./index.html" lang="en" class="logo main-logo">Web<samp class="header-logo">Studio</samp></a>
+                <ul class="site-nav list">
+                    <li class="item">
+                        <a href="./index.html" class="link current">Студия</a>
+                    </li>
+                    <li class="item">
+                        <a href="./portfolio.html" class="link">Портфолио</a>
+                    </li>
+                    <li class="item"><a href="Контакты" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="container-link">
+                <ul class="auth-nav list">
+                    <li class="item">
+                        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                    </li>
+                    <li class="item">
+                        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-
-    <!--Основоной контейнер-->
     <main>
-        <!--Hero-->
-        <section>
-            <h1>ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button>Заказать услугу</button>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-titel">Эффективные решения для вашего бизнеса</h1>
+                <button type="button" class="hero-button">Заказать услугу</button>
+            </div>
         </section>
-
-
-        <!--Что мы делаем в разделе-->
-        <section>
-            <ul>
-                <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>Идейние сообрадения, а также начало повседневной работы по формираванию позиции</p>
-                </li>
-                <li>
-                    <h3>Пунктуальность</h3>
-                    <p>Задача организации, в особенности же рамки и место обучения кадров влечет за
-                        собой.
-                    </p>
-                </li>
-                <li>
-                    <h3>Планирование</h3>
-                    <p>Равным образом консультацыя с широким активом в значительной степени обуславливает.</p>
-                </li>
-                <li>
-                    <h3>Современые технологии</h3>
-                    <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                </li>
-            </ul>
+        <section class="features">
+            <div class="container">
+                <h2 hidden>Особености</h2>
+                <ul class="list">
+                    <li class="item">
+                        <h3 class="features-titel">Внимание к деталям</h3>
+                        <p class="features-text">
+                            Идейные соображения, а также начало повседневной работы по
+                            формированию позиции.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <h3 class="features-titel">Пунктуальность</h3>
+                        <p class="features-text">
+                            Задача организации, в особенности же рамки и место обучения
+                            кадров влечет за собой.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <h3 class="features-titel">Планирование</h3>
+                        <p class="features-text">
+                            Равным образом консультация с широким активом в значительной
+                            степени обуславливает.
+                        </p>
+                    </li>
+                    <li class="item">
+                        <h3 class="features-titel">Современные технологии</h3>
+                        <p class="features-text">
+                            Значимость этих проблем настолько очевидна, что реализация
+                            плановых заданий.
+                        </p>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <h2>Чем мы занимаемся</h2>
-            <ul>
-                <li><img src="./images/telephone.jpg" alt="работа " width="370" height="294"></li>
-                <li><img src="./images/keyboard.jpg" alt="работа2" width="370" height="294"></li>
-                <li><img src="./images/tablet.jpg" alt="работа3" width="370" height="294"></li>
-            </ul>
+        <section class="works">
+            <div class="container">
+                <h2 class="works-titel">Чем мы занимаемся</h2>
+                <ul class="list">
+                    <li class="works-item">
+                        <img class="works-img" src="./images/keyboard.jpg" alt="програмист печатает на клавиатуре"
+                            style="width: 370px; height: 294px" />
+                    </li>
+                    <li class="works-item">
+                        <img class="works-img" src="./images/telephone.jpg" alt="девушка держит телефон"
+                            style="width: 370px; height: 294px" />
+                    </li>
+                    <li class="works-item">
+                        <img class="works-img" src="./images/tablet.jpg" alt="планшет с графикой"
+                            style="width: 370px; height: 294px" />
+                    </li>
+                </ul>
+            </div>
         </section>
-
-        <!--Наша команда-->
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
-                <li>
-                    <img src="./images/igor.jpg" alt="фото Игорь" width="270" height="260">
-                    <h3>Игорь Демяненко</h3>
-                    <p>Product Designer</p>
-                </li>
-                <li>
-                    <img src="./images/olga.jpg" alt="фото Ольга" width="270" height="260">
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
-                </li>
-                <li>
-                    <img src="./images/nikolay.jpg" alt="фото Николай" width="270" height="260">
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/michail.jpg" alt="фото Михаил" width="270" height="260">
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
-                </li>
-            </ul>
+        <section class="team">
+            <div class="container">
+                <h2 class="team-titel">Наша команда</h2>
+                <ul class="list">
+                    <li class="team-bord">
+                        <img class="team-img" src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
+                        <div class="team-contein">
+                            <h3 class="team-name">Игорь Демьяненко</h3>
+                            <p class="team-text" lang="en">Product Designer</p>
+                        </div>
+                    </li>
+                    <li class="team-bord">
+                        <img class="team-img" src="./images/olga.jpg" alt="Ольга Репина" width="270" />
+                        <div class="team-contein">
+                            <h3 class="team-name">Ольга Репина</h3>
+                            <p class="team-text" lang="en">Frontend Developer</p>
+                        </div>
+                    </li>
+                    <li class="team-bord">
+                        <img class="team-img" src="./images/nikolay.jpg" alt="Николай Тарасов" width="270" />
+                        <div class="team-contein">
+                            <h3 class="team-name">Николай Тарасов</h3>
+                            <p class="team-text" lang="en">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="team-bord">
+                        <img class="team-img" src="./images/michail.jpg" alt="Михаил Ермаков" width="270" />
+                        <div class="team-contein">
+                            <h3 class="team-name">Михаил Ермаков</h3>
+                            <p class="team-text" lang="en">UI Designer</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-
-    <!--Footer container-->
-    <footer>
-        <a href="./index.html">
-            <span>Web</span>Studio
-        </a>
-        <address>
-            г. Киев, пр-т Леси Украинки, 26
-
-            <ul>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </address>
+    <footer class="footer">
+        <div class="container">
+            <a href="./index.html" class="logo">Web<samp class="footer-logo">Studio</samp></a>
+            <address class="address">
+                <ul class="address-list">
+                    <li class="address-item">
+                        <a href="https://www.google.com/maps/place" class="footer-address">г. Киев, пр-т Леси Украинки,
+                            26</a>
+                    </li>
+                    <li class="address-item">
+                        <a href="mailto:info@example.com" class="footer-link">info@example.com</a>
+                    </li>
+                    <li class="address-item">
+                        <a href="tel:+380991111111" class="footer-link last">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
-
 </body>
 
 </html>
